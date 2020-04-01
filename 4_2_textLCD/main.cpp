@@ -12,14 +12,14 @@ int main()
 
 {
 
-      int x=0;
+      int x=31;
 
-      lcd.printf("Hello World!\n");
+      lcd.printf("107061127!\n");
 
       while(true)
 
       {
-
+            x--;
             led = !led;             // toggle led
 
             lcd.locate(5,1);
@@ -28,10 +28,15 @@ int main()
 
             wait(1);
 
-            x++;
+            
+            if(x == 0) {
+                  break;
+            }
 
       }
 
-}
+
 
 }
+
+
